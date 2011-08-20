@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" version="3">
+  <includeClasses>
+    <classEntry path="net.twerno.eduClient.EduClient"/>
+    <classEntry path="net.twerno.eduClient.RemoteObjectFactory"/>
+    <classEntry path="net.twerno.eduClient.services.AbstractService"/>
+    <classEntry path="net.twerno.eduClient.services.UserService"/>
+    <classEntry path="net.twerno.eduClient.services.TestService"/>
+    <classEntry path="net.twerno.eduClient.responders.AlertResponder"/>
+    <classEntry path="net.twerno.eduClient.errors.ENiezalogowany"/>
+    <classEntry path="net.twerno.eduClient.RO.Account"/>
+    <classEntry path="net.twerno.eduClient.RO.ROOEntity"/>
+    <classEntry path="net.twerno.eduClient.consts.Const"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
