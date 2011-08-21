@@ -1,4 +1,5 @@
 package net.twerno.eduClient.RO {
+	import mx.collections.ArrayCollection;
 	
 	[RemoteClass(alias="net.twerno.eduserver.user.entities.Account")]
 	public class Account extends ROOEntity {
@@ -6,10 +7,10 @@ package net.twerno.eduClient.RO {
 		
 		public var password : String;
 		
-		public var enabled : Boolean;
+		public var enabled : Boolean = true;
 		
-		public var roles : Array;
+		public var roles : ArrayCollection = new ArrayCollection();
 		
-		public var grupy : Array;
+		public var grupy : ArrayCollection = new ArrayCollection();
 	}
 }

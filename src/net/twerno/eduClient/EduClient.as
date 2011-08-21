@@ -10,11 +10,13 @@ package net.twerno.eduClient {
 		
 		public function get userService():UserService {return _userService}
 		public function get testService():TestService {return _testService}
+		
+		public var otwartePolaczenie : Boolean = true;
 
 		public function EduClient(endPoint: String) {
 			roFactory = new RemoteObjectFactory(endPoint);
-			_userService = new UserService(UserService.SERVICE_NAME, roFactory);
-			_testService = new TestService(TestService.SERVICE_NAME, roFactory);
+			_userService = new UserService(this, UserService.SERVICE_NAME, roFactory);
+			_testService = new TestService(this, TestService.SERVICE_NAME, roFactory);
 		}
 	}
 }

@@ -11,6 +11,10 @@
     <classEntry path="net.twerno.eduClient.RO.Account"/>
     <classEntry path="net.twerno.eduClient.RO.ROOEntity"/>
     <classEntry path="net.twerno.eduClient.consts.Const"/>
+    <classEntry path="net.twerno.eduClient.helper.UserHelper"/>
+    <classEntry path="net.twerno.eduClient.test.RegisterAccount"/>
+    <classEntry path="net.twerno.eduClient.responders.FunctResponder"/>
+    <classEntry path="net.twerno.eduClient.responders.AsyncTokenMock"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

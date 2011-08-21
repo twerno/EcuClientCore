@@ -15,7 +15,7 @@ package net.twerno.eduClient {
 
 		public function RemoteObjectFactory(endpoint: String) {
 			this.endpoint = endpoint;
-			setCheannel(endpoint);
+			setChannel(endpoint);
 		}
 
 		public function getRO(destination: String):RemoteObject {
@@ -24,19 +24,19 @@ package net.twerno.eduClient {
 			result.channelSet = cs;
 			return result;
 		}
-		
-		private function setCheannel(endpoint:String):void {
+
+		private function setChannel(endpoint:String):void {
+			var channel:Channel;
+			cs = new ChannelSet();
 			if (endpoint != null) {
-				var chan:Channel;
 				if (endpoint.indexOf("https") == 0) {
-					chan = new SecureAMFChannel(null, endpoint);
+					channel = new SecureAMFChannel(null, endpoint);
 				} else {
-					chan = new AMFChannel(null, endpoint);
+					channel = new AMFChannel(null, endpoint);
 				}
-				cs = new ChannelSet();
-				cs.addChannel(chan);
+				cs.addChannel(channel);
 			}
 		}
-		
+
 	}
 }
