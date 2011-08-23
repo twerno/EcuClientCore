@@ -1,6 +1,7 @@
 package net.twerno.eduClient.RO {
 	import mx.collections.ArrayCollection;
 	
+	[Bindable]
 	[RemoteClass(alias="net.twerno.eduserver.user.entities.Account")]
 	public class Account extends ROOEntity {
 		public var username : String;
