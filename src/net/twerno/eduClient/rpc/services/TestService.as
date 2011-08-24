@@ -1,4 +1,4 @@
-package net.twerno.eduClient.services {
+package net.twerno.eduClient.rpc.services {
 	import mx.rpc.AsyncToken;
 	
 	import net.twerno.eduClient.EduClient;

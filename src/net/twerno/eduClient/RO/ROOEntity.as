@@ -7,7 +7,7 @@ package net.twerno.eduClient.RO {
 
 		public var version: int;
 
-		public function toString():String {
+		public function detailedToString():String {
 			return ObjectHelper.detailedToString(this, 
 				true,   // showClassInfo
 				true,   // showVariables

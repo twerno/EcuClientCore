@@ -1,6 +1,6 @@
 package net.twerno.eduClient {
-	import net.twerno.eduClient.services.TestService;
-	import net.twerno.eduClient.services.UserService;
+	import net.twerno.eduClient.rpc.services.TestService;
+	import net.twerno.eduClient.rpc.services.UserService;
 
 	public class EduClient {
 		private var roFactory:RemoteObjectFactory;

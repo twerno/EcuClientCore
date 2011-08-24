@@ -3,9 +3,9 @@
   <includeClasses>
     <classEntry path="net.twerno.eduClient.EduClient"/>
     <classEntry path="net.twerno.eduClient.RemoteObjectFactory"/>
-    <classEntry path="net.twerno.eduClient.services.AbstractService"/>
-    <classEntry path="net.twerno.eduClient.services.UserService"/>
-    <classEntry path="net.twerno.eduClient.services.TestService"/>
+    <classEntry path="net.twerno.eduClient.rpc.services.AbstractService"/>
+    <classEntry path="net.twerno.eduClient.rpc.services.UserService"/>
+    <classEntry path="net.twerno.eduClient.rpc.services.TestService"/>
     <classEntry path="net.twerno.eduClient.responders.AlertResponder"/>
     <classEntry path="net.twerno.eduClient.errors.ENiezalogowany"/>
     <classEntry path="net.twerno.eduClient.RO.Account"/>
@@ -13,8 +13,13 @@
     <classEntry path="net.twerno.eduClient.consts.Const"/>
     <classEntry path="net.twerno.eduClient.helper.UserHelper"/>
     <classEntry path="net.twerno.eduClient.responders.FunctResponder"/>
-    <classEntry path="net.twerno.eduClient.responders.AsyncTokenMock"/>
     <classEntry path="net.twerno.eduClient.RO.Grupa"/>
+    <classEntry path="net.twerno.eduClient.rpc.tokens.RpcToken"/>
+    <classEntry path="net.twerno.eduClient.responders.IRpcResponder"/>
+    <classEntry path="net.twerno.eduClient.rpc.tokens.GrupaRpcToken"/>
+    <classEntry path="net.twerno.eduClient.responders.AlertRpcResponder"/>
+    <classEntry path="net.twerno.eduClient.responders.RpcResponder"/>
+    <classEntry path="net.twerno.eduClient.rpc.tokens.GrupaUserRpcToken"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

@@ -10,19 +10,17 @@ package net.twerno.eduClient.responders {
 		
 		public function FunctResponder(onResult:Function, onFault:Function) {
 			this.onResult = onResult;
-			this.onFault = onFault;
+			this.onFault  = onFault;
 		}
 		
 		public function result(data:Object):void {
-			if (onResult != null) {
+			if (onResult != null)
 				onResult(data as ResultEvent);
-			}
 		}
 		
 		public function fault(info:Object):void {
-			if (onFault != null) {
+			if (onFault != null)
 				onFault(info as FaultEvent);
-			}
 		}
 	}
 }
