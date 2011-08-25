@@ -2,7 +2,7 @@ package net.twerno.eduClient.rpc.services {
 	import mx.rpc.AsyncToken;
 	
 	import net.twerno.eduClient.EduClient;
-	import net.twerno.eduClient.RO.Account;
+	import net.twerno.eduClient.RO.user.Account;
 	import net.twerno.eduClient.RemoteObjectFactory;
 	import net.twerno.eduClient.rpc.tokens.GrupaRpcToken;
 	import net.twerno.eduClient.rpc.tokens.GrupaUserRpcToken;

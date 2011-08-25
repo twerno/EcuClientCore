@@ -8,18 +8,30 @@
     <classEntry path="net.twerno.eduClient.rpc.services.TestService"/>
     <classEntry path="net.twerno.eduClient.responders.AlertResponder"/>
     <classEntry path="net.twerno.eduClient.errors.ENiezalogowany"/>
-    <classEntry path="net.twerno.eduClient.RO.Account"/>
+    <classEntry path="net.twerno.eduClient.RO.user.Account"/>
     <classEntry path="net.twerno.eduClient.RO.ROOEntity"/>
     <classEntry path="net.twerno.eduClient.consts.Const"/>
     <classEntry path="net.twerno.eduClient.helper.UserHelper"/>
     <classEntry path="net.twerno.eduClient.responders.FunctResponder"/>
-    <classEntry path="net.twerno.eduClient.RO.Grupa"/>
+    <classEntry path="net.twerno.eduClient.RO.user.Grupa"/>
     <classEntry path="net.twerno.eduClient.rpc.tokens.RpcToken"/>
     <classEntry path="net.twerno.eduClient.responders.IRpcResponder"/>
     <classEntry path="net.twerno.eduClient.rpc.tokens.GrupaRpcToken"/>
     <classEntry path="net.twerno.eduClient.responders.AlertRpcResponder"/>
     <classEntry path="net.twerno.eduClient.responders.RpcResponder"/>
     <classEntry path="net.twerno.eduClient.rpc.tokens.GrupaUserRpcToken"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.Zadanie"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.TypWyboru"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie"/>
+    <classEntry path="net.twerno.eduClient.RO.sesja.Sesja"/>
+    <classEntry path="net.twerno.eduClient.RO.pytanie.ZbiorPytan"/>
+    <classEntry path="net.twerno.eduClient.RO.pytanie.PytanieQuiz"/>
+    <classEntry path="net.twerno.eduClient.RO.pytanie.PytaniePosortuj"/>
+    <classEntry path="net.twerno.eduClient.RO.pytanie.PytanieQuizOdpowiedz"/>
+    <classEntry path="net.twerno.eduClient.rpc.services.ZadanieService"/>
+    <classEntry path="net.twerno.eduClient.rpc.tokens.ZadanieToken"/>
+    <classEntry path="net.twerno.eduClient.rpc.tokens.ZadaneZadanieToken"/>
+    <classEntry path="net.twerno.eduClient.rpc.services.PytanieService"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
