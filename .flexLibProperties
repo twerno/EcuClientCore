@@ -32,6 +32,7 @@
     <classEntry path="net.twerno.eduClient.rpc.tokens.ZadanieToken"/>
     <classEntry path="net.twerno.eduClient.rpc.tokens.ZadaneZadanieToken"/>
     <classEntry path="net.twerno.eduClient.rpc.services.PytanieService"/>
+    <classEntry path="net.twerno.eduClient.rpc.tokens.AccountToken"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

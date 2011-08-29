@@ -4,6 +4,7 @@ package net.twerno.eduClient.rpc.services {
 	import net.twerno.eduClient.EduClient;
 	import net.twerno.eduClient.RO.user.Account;
 	import net.twerno.eduClient.RemoteObjectFactory;
+	import net.twerno.eduClient.rpc.tokens.AccountToken;
 	import net.twerno.eduClient.rpc.tokens.GrupaRpcToken;
 	import net.twerno.eduClient.rpc.tokens.GrupaUserRpcToken;
 	import net.twerno.eduClient.rpc.tokens.RpcToken;
@@ -19,6 +20,7 @@ package net.twerno.eduClient.rpc.services {
 		private static const DODAJ_GRUPE_METHOD       : String = 'dodajGrupe';
 		private static const USUN_GRUPE_METHOD        : String = 'usunGrupe';
 		private static const FIND_ALL_GROUPS_METHOD   : String = 'findAllGroups';
+		private static const ZAPISZ_ACCOUNT_METHOD    : String = 'zapiszAccount';
 
 		public function UserService(eduClient: EduClient, destination:String, roFactory:RemoteObjectFactory) {
 			super(eduClient, destination, roFactory);
@@ -68,6 +70,11 @@ package net.twerno.eduClient.rpc.services {
 
 		public function findAllGroups():RpcToken {
 			return rpcSend(FIND_ALL_GROUPS_METHOD);
+		}
+		
+		public function zapisAccount(account:Account):AccountToken {
+			var token:AsyncToken = send(ZAPISZ_ACCOUNT_METHOD, account);
+			return new AccountToken(token ,account);
 		}
 	}
 }

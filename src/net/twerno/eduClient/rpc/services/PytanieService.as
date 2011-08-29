@@ -7,8 +7,8 @@ package net.twerno.eduClient.rpc.services {
 	import net.twerno.eduClient.rpc.tokens.RpcToken;
 	
 	public class PytanieService extends AbstractService {
-		public static const SERVICE_NAME : String = 'pytaniaService';
-		
+		public static const SERVICE_NAME : String = 'pytanieService';
+
 		private static const ZAPISZ_ZBIOR_POSORTUJ_METHOD        : String = 'zapiszZbior_Posortuj';
 		private static const WCZYTAJ_ZBIOR_POSORTUJ_METHOD       : String = 'wczytajZbior_Posortuj';
 		private static const ZAPISZ_ZBIOR_QUIZ_METHOD            : String = 'zapiszZbior_Quiz';

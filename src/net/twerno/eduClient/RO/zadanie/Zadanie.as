@@ -22,5 +22,8 @@ package net.twerno.eduClient.RO.zadanie {
 //		@NotNull
 //		@ManyToMany(cascade = CascadeType.ALL)
 		public var zbiorPytan:ArrayCollection;
+		
+//		@NotNull
+		public var usuniete:Boolean;
 	}
 }

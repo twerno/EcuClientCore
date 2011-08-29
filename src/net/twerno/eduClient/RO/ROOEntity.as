@@ -3,9 +3,9 @@ package net.twerno.eduClient.RO {
 	
 	[Bindable]
 	public class ROOEntity {
-		public var id: uint;
+		public var id: uint = 0;
 
-		public var version: int;
+		public var version: int = -1;
 
 		public function detailedToString():String {
 			return ObjectHelper.detailedToString(this, 
