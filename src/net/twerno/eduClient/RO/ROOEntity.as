@@ -3,7 +3,7 @@ package net.twerno.eduClient.RO {
 	
 	[Bindable]
 	public class ROOEntity {
-		public var id: uint = 0;
+		public var id: String = "";
 
 		public var version: int = -1;
 

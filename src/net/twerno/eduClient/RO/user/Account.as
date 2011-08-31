@@ -2,6 +2,7 @@ package net.twerno.eduClient.RO.user {
 	import mx.collections.ArrayCollection;
 	import mx.collections.Sort;
 	import mx.collections.SortField;
+	import mx.utils.ObjectUtil;
 	
 	import net.twerno.eduClient.RO.ROOEntity;
 	

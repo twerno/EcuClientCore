@@ -6,39 +6,10 @@ package net.twerno.eduClient.RO.zadanie {
 	
 	[Bindable]
 	[RemoteClass(alias="net.twerno.eduserver.zadanie.entity.ZadaneZadanie")]
-	public class ZadaneZadanie extends ROOEntity {
-//		@NotNull
-//		@ManyToOne
-		public var zadanie:Zadanie;
-		
-//		@NotNull
-		public var obowiazkowe:Boolean;
+	public class ZadaneZadanie extends Zadanie {
 		
 //		@NotNull
 //		@ManyToMany
-		public var grupy:ArrayCollection;
-		
-//		@Temporal(TemporalType.TIMESTAMP)
-//		@DateTimeFormat(style = "M-")
-		public var dtOd:Date;
-		
-//		@Temporal(TemporalType.TIMESTAMP)
-//		@DateTimeFormat(style = "M-")
-		public var dtDo:Date;
-		
-//		@Temporal(TemporalType.TIMESTAMP)
-//		@DateTimeFormat(style = "M-")
-		public var dataUtworzenia:Date;
-//		
-//		@NotNull
-		public var maxIloscPytan:int;
-		
-//		@NotNull
-//		@OneToOne(mappedBy="zadaneZadanie")
-		public var typWyboru:String;
-		
-//		@NotNull
-//		@OneToOne
-		public var autor:Account;
+		public var grupy:ArrayCollection = new ArrayCollection();
 	}
 }

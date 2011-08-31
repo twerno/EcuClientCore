@@ -26,13 +26,15 @@
     <classEntry path="net.twerno.eduClient.RO.sesja.Sesja"/>
     <classEntry path="net.twerno.eduClient.RO.pytanie.ZbiorPytan"/>
     <classEntry path="net.twerno.eduClient.RO.pytanie.PytanieQuiz"/>
-    <classEntry path="net.twerno.eduClient.RO.pytanie.PytaniePosortuj"/>
     <classEntry path="net.twerno.eduClient.RO.pytanie.PytanieQuizOdpowiedz"/>
     <classEntry path="net.twerno.eduClient.rpc.services.ZadanieService"/>
     <classEntry path="net.twerno.eduClient.rpc.tokens.ZadanieToken"/>
     <classEntry path="net.twerno.eduClient.rpc.tokens.ZadaneZadanieToken"/>
     <classEntry path="net.twerno.eduClient.rpc.services.PytanieService"/>
     <classEntry path="net.twerno.eduClient.rpc.tokens.AccountToken"/>
+    <classEntry path="net.twerno.eduClient.RO.pytanie.PytanieZamkniete"/>
+    <classEntry path="net.twerno.eduClient.RO.pytanie.OdpPytanieZamkniete"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.Zadanie_ZbiorPytan"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

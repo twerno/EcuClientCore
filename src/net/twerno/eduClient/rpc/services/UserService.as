@@ -21,6 +21,8 @@ package net.twerno.eduClient.rpc.services {
 		private static const USUN_GRUPE_METHOD        : String = 'usunGrupe';
 		private static const FIND_ALL_GROUPS_METHOD   : String = 'findAllGroups';
 		private static const ZAPISZ_ACCOUNT_METHOD    : String = 'zapiszAccount';
+		private static const ZMIEN_MOJE_HASLO_METHOD  : String = 'zmienMojeHaslo';
+		private static const ZMIEN_HASLO_METHOD       : String = 'zmienHaslo';
 
 		public function UserService(eduClient: EduClient, destination:String, roFactory:RemoteObjectFactory) {
 			super(eduClient, destination, roFactory);
@@ -75,6 +77,14 @@ package net.twerno.eduClient.rpc.services {
 		public function zapisAccount(account:Account):AccountToken {
 			var token:AsyncToken = send(ZAPISZ_ACCOUNT_METHOD, account);
 			return new AccountToken(token ,account);
+		}
+		
+		public function zmienMojeHaslo(noweHaslo:String):RpcToken {
+			return rpcSend(ZMIEN_MOJE_HASLO_METHOD, noweHaslo);
+		}
+		
+		public function zmienHaslo(username:String, noweHaslo:String):RpcToken {
+			return rpcSend(ZMIEN_HASLO_METHOD, username, noweHaslo);
 		}
 	}
 }
