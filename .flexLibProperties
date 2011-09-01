@@ -35,6 +35,7 @@
     <classEntry path="net.twerno.eduClient.RO.pytanie.PytanieZamkniete"/>
     <classEntry path="net.twerno.eduClient.RO.pytanie.OdpPytanieZamkniete"/>
     <classEntry path="net.twerno.eduClient.RO.zadanie.Zadanie_ZbiorPytan"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_ZbiorPytan"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

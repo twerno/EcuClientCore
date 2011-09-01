@@ -1,4 +1,5 @@
 package net.twerno.eduClient.rpc.services {
+	import mx.collections.ArrayCollection;
 	import mx.rpc.AsyncToken;
 	
 	import net.twerno.eduClient.EduClient;
@@ -14,9 +15,10 @@ package net.twerno.eduClient.rpc.services {
 		
 		private static const ZAPISZ_ZADANIE_METHOD         : String = 'zapiszZadanie';
 		private static const DAJ_MOJE_ZADANIA_METHOD       : String = 'dajMojeZadania';
-		private static const ZAPISZ_ZADANE_ZADANIA_METHOD  : String = 'zapiszZadaneZadanie';
+		private static const ZADAJ_ZADANIE_METHOD          : String = 'zadajZadanie';
+//		private static const ZAPISZ_ZADANE_ZADANIA_METHOD  : String = 'zapiszZadaneZadanie';
 		private static const DAJ_ZADANE_PRZEZE_MNIE_METHOD : String = 'dajZadanePrzezeMnie';
-		private static const DAJ_ZADANE_MI_METHOD          : String = 'dajZadaneMi';
+//		private static const DAJ_ZADANE_MI_METHOD          : String = 'dajZadaneMi';
 		
 		public function ZadanieService(eduClient:EduClient, destination:String, roFactory:RemoteObjectFactory) {
 			super(eduClient, destination, roFactory);
@@ -31,17 +33,21 @@ package net.twerno.eduClient.rpc.services {
 			return rpcSend(DAJ_MOJE_ZADANIA_METHOD);
 		}
 
-		public function zapiszZadaneZadanie(zadanie:ZadaneZadanie):ZadaneZadanieToken {
-			var token:AsyncToken = send(ZAPISZ_ZADANE_ZADANIA_METHOD, zadanie);
-			return new ZadaneZadanieToken(token, zadanie);
+		public function zadajZadanie(zadanieID:String, grupy:ArrayCollection):RpcToken {
+			return rpcSend(ZADAJ_ZADANIE_METHOD, zadanieID, grupy);
 		}
-		
+
+//		public function zapiszZadaneZadanie(zadanie:ZadaneZadanie):ZadaneZadanieToken {
+//			var token:AsyncToken = send(ZAPISZ_ZADANE_ZADANIA_METHOD, zadanie);
+//			return new ZadaneZadanieToken(token, zadanie);
+//		}
+//		
 		public function dajZadanePrzezeMnie():RpcToken {
 			return rpcSend(DAJ_ZADANE_PRZEZE_MNIE_METHOD);
 		}
-
-		public function dajZadaneMi():RpcToken {
-			return rpcSend(DAJ_ZADANE_MI_METHOD);
-		}
+//
+//		public function dajZadaneMi():RpcToken {
+//			return rpcSend(DAJ_ZADANE_MI_METHOD);
+//		}
 	}
 }
