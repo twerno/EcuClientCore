@@ -15,7 +15,7 @@ package net.twerno.eduClient.RO.pytanie {
 		public var opis:String;
 		
 //		@NotNull
-		public var kategoria:String;
+		public var przedmiot:String;
 		
 //		@NotNull
 		public var autorId:String;
@@ -35,7 +35,7 @@ package net.twerno.eduClient.RO.pytanie {
 			this.version    = zbior.version;
 			this.typZadania = zbior.typZadania;
 			this.opis       = zbior.opis;
-			this.kategoria  = zbior.kategoria;
+			this.przedmiot  = zbior.przedmiot;
 			this.isPublic   = zbior.isPublic;
 			this.usuniety   = zbior.usuniety;
 		}

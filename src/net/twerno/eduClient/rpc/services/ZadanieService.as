@@ -18,7 +18,7 @@ package net.twerno.eduClient.rpc.services {
 		private static const ZADAJ_ZADANIE_METHOD          : String = 'zadajZadanie';
 //		private static const ZAPISZ_ZADANE_ZADANIA_METHOD  : String = 'zapiszZadaneZadanie';
 		private static const DAJ_ZADANE_PRZEZE_MNIE_METHOD : String = 'dajZadanePrzezeMnie';
-//		private static const DAJ_ZADANE_MI_METHOD          : String = 'dajZadaneMi';
+		private static const DAJ_ZADANE_MI_METHOD          : String = 'dajZadaneMi';
 		
 		public function ZadanieService(eduClient:EduClient, destination:String, roFactory:RemoteObjectFactory) {
 			super(eduClient, destination, roFactory);
@@ -45,9 +45,9 @@ package net.twerno.eduClient.rpc.services {
 		public function dajZadanePrzezeMnie():RpcToken {
 			return rpcSend(DAJ_ZADANE_PRZEZE_MNIE_METHOD);
 		}
-//
-//		public function dajZadaneMi():RpcToken {
-//			return rpcSend(DAJ_ZADANE_MI_METHOD);
-//		}
+
+		public function dajZadaneMi():RpcToken {
+			return rpcSend(DAJ_ZADANE_MI_METHOD);
+		}
 	}
 }

@@ -24,6 +24,8 @@ package net.twerno.eduClient.RO.zadanie {
 
 //		@NotNull
 		public var obowiazkowe:Boolean = true;
+		
+		public var minimalnyWynik:int;
 
 //		@Temporal(TemporalType.TIMESTAMP)
 //		@DateTimeFormat(style = "M-")

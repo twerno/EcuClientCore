@@ -1,18 +1,24 @@
 package net.twerno.eduClient.RO.sesja {
+	import mx.collections.ArrayCollection;
+	
 	import net.twerno.eduClient.RO.ROOEntity;
 	
 	[Bindable]
 	[RemoteClass(alias="net.twerno.eduserver.sesja.entity.Sesja")]
 	public class Sesja extends ROOEntity {
 //		@NotNull
-		public var uczenId:uint;
+		public var uczenId:String;
 		
 //		@NotNull
-		public var zadaneZadanieId:uint;
+		public var zadaneZadanieId:String;
 		
 //		@Temporal(TemporalType.TIMESTAMP)
 //		@DateTimeFormat(style = "M-")
-		public var dtSesja:Date;
+		public var dtOtwarcia:Date;
+		
+//		@Temporal(TemporalType.TIMESTAMP)
+//		@DateTimeFormat(style = "M-")
+		public var dtZamkniecia:Date;
 		
 //		@NotNull
 		public var stanSesji:String;
@@ -20,7 +26,7 @@ package net.twerno.eduClient.RO.sesja {
 //		@NotNull
 		public var wynik:Number;
 		
-//		@NotNull
-		public var ukonczone:Boolean;
+//		@OneToMany(mappedBy="sesjaId")
+		public var odpowiedzi:ArrayCollection = new ArrayCollection();
 	}
 }

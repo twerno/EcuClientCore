@@ -26,6 +26,8 @@ package net.twerno.eduClient.RO.zadanie {
 		//		@NotNull
 		public var obowiazkowe:Boolean = true;
 		
+		public var minimalnyWynik:int;
+		
 		//		@Temporal(TemporalType.TIMESTAMP)
 		//		@DateTimeFormat(style = "M-")
 		public var dtOd:Date;
@@ -49,7 +51,7 @@ package net.twerno.eduClient.RO.zadanie {
 		public var zadanie_zbioryPytan:ArrayCollection = new ArrayCollection();
 		
 //		@NotNull
-//		@ManyToMany
+//		@ElementCollection
 		public var grupy:ArrayCollection = new ArrayCollection();
 	}
 }

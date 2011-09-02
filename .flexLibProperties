@@ -36,6 +36,10 @@
     <classEntry path="net.twerno.eduClient.RO.pytanie.OdpPytanieZamkniete"/>
     <classEntry path="net.twerno.eduClient.RO.zadanie.Zadanie_ZbiorPytan"/>
     <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_ZbiorPytan"/>
+    <classEntry path="net.twerno.eduClient.RegisterROHelper"/>
+    <classEntry path="net.twerno.eduClient.RO.sesja.KartaOdpowiedzi"/>
+    <classEntry path="net.twerno.eduClient.RO.sesja.SesjaOtwartaRO"/>
+    <classEntry path="net.twerno.eduClient.rpc.services.SesjaService"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

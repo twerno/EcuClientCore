@@ -17,9 +17,5 @@ package net.twerno.eduClient.RO.zadanie {
 		
 		//		@NotNull
 		public var zbiorPytanId:String;
-
-		public function ZadaneZadanie_ZbiorPytan() {
-			super();
-		}
 	}
 }
