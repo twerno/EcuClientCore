@@ -30,12 +30,12 @@ package net.twerno.eduClient.rpc.services {
 
 		public function login(username:String, password:String):RpcToken {
 			var token:AsyncToken = ro.channelSet.login(username, password); 
-			return new RpcToken(token);
+			return new RpcToken(token, destination, 'login');
 		}
 
 		public function logout():RpcToken {
 			var token:AsyncToken = ro.channelSet.logout();
-			return new RpcToken(token); 
+			return new RpcToken(token, destination, 'logout'); 
 		}
 
 		public function registerUser(username: String, password: String, role_uczen: Boolean, role_nauczyciel: Boolean):RpcToken {
@@ -52,22 +52,30 @@ package net.twerno.eduClient.rpc.services {
 
 		public function dodajDoGrupy(username:String, nazwaGrupy:String):GrupaUserRpcToken {
 			var token:AsyncToken = send(DODAJ_DO_GRUPY_METHOD, username, nazwaGrupy);
-			return new GrupaUserRpcToken(token, username, nazwaGrupy);
+			return new GrupaUserRpcToken(token, 
+				destination, 
+				DODAJ_DO_GRUPY_METHOD, 
+				username, 
+				nazwaGrupy);
 		}
 
 		public function usunZGrupy(username:String, nazwaGrupy:String):GrupaUserRpcToken {
 			var token:AsyncToken = send(USUN_Z_GRUPY_METHOD, username, nazwaGrupy);
-			return new GrupaUserRpcToken(token, username, nazwaGrupy);		
+			return new GrupaUserRpcToken(token, 
+				destination,
+				USUN_Z_GRUPY_METHOD,
+				username, 
+				nazwaGrupy);		
 		}
 
 		public function dodajGrupe(nazwaGrupy:String):GrupaRpcToken {
 			var token:AsyncToken = send(DODAJ_GRUPE_METHOD, nazwaGrupy);
-			return new GrupaRpcToken(token, nazwaGrupy);
+			return new GrupaRpcToken(token, destination, DODAJ_GRUPE_METHOD, nazwaGrupy);
 		}
 
 		public function usunGrupe(nazwaGrupy:String):GrupaRpcToken {
 			var token:AsyncToken = send(USUN_GRUPE_METHOD, nazwaGrupy);
-			return new GrupaRpcToken(token, nazwaGrupy);
+			return new GrupaRpcToken(token, destination, USUN_GRUPE_METHOD, nazwaGrupy);
 		}
 
 		public function findAllGroups():RpcToken {
@@ -76,7 +84,7 @@ package net.twerno.eduClient.rpc.services {
 		
 		public function zapisAccount(account:Account):AccountToken {
 			var token:AsyncToken = send(ZAPISZ_ACCOUNT_METHOD, account);
-			return new AccountToken(token ,account);
+			return new AccountToken(token, destination, ZAPISZ_ACCOUNT_METHOD, account);
 		}
 		
 		public function zmienMojeHaslo(noweHaslo:String):RpcToken {

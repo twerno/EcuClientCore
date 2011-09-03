@@ -10,9 +10,20 @@ package net.twerno.eduClient.rpc.tokens {
 	public class RpcToken implements IResponder {
 		private var _asyncToken : AsyncToken;
 		private var _responders:Array;
+		private var _destination:String;
+		private var _remoteMethod:String;
 
 		public function get asyncToken():AsyncToken {return _asyncToken}
 		public function get responders():Array      {return _responders}
+		public function get destination():String    {return _destination}
+		public function get remoteMethod():String   {return _remoteMethod}
+		
+		public function RpcToken(asyncToken:AsyncToken, destination:String, remoteMethod:String):void {
+			_asyncToken = asyncToken;
+			_asyncToken.addResponder(this);
+			_destination  = destination;
+			_remoteMethod = remoteMethod;
+		}
 
 		public function addResponder(responder:IRpcResponder):void {
 			if (_responders == null)
@@ -23,11 +34,6 @@ package net.twerno.eduClient.rpc.tokens {
 
 		public function newResponder(onResult:Function, onFault:Function):void {
 			addResponder(new RpcResponder(onResult, onFault));
-		}
-
-		public function RpcToken(asyncToken:AsyncToken) {
-			_asyncToken = asyncToken;
-			_asyncToken.addResponder(this);
 		}
 
 		public function beforeResult(event:ResultEvent):void {

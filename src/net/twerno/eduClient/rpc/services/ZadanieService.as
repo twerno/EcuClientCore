@@ -26,7 +26,7 @@ package net.twerno.eduClient.rpc.services {
 		
 		public function zapiszZadanie(zadanie:Zadanie):ZadanieToken {
 			var token:AsyncToken = send(ZAPISZ_ZADANIE_METHOD, zadanie);
-			return new ZadanieToken(token, zadanie);
+			return new ZadanieToken(token, destination, ZAPISZ_ZADANIE_METHOD, zadanie);
 		}
 		
 		public function dajMojeZadania():RpcToken {

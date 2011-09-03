@@ -8,8 +8,9 @@ package net.twerno.eduClient.rpc.tokens {
 		
 		public var zadanie:Zadanie;
 		
-		public function ZadanieToken(asyncToken:AsyncToken, zadanie:Zadanie) {
-			super(asyncToken);
+		public function ZadanieToken(asyncToken:AsyncToken, destination:String, remoteMethod:String,  
+									 zadanie:Zadanie) {
+			super(asyncToken, destination, remoteMethod);
 			this.zadanie = zadanie;
 		}
 		

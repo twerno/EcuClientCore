@@ -35,7 +35,7 @@ package net.twerno.eduClient.rpc.services {
 		protected function rpcSend(operationName:String, ...params):RpcToken {
 			if (_eduClient.otwartePolaczenie) {
 				var token:AsyncToken = _remoteObject.getOperation(operationName).send.apply(null, params); 
-				return new RpcToken(token);
+				return new RpcToken(token, destination, operationName);
 			}
 			else
 				throw new Error('Połączenie zamknięte.')
