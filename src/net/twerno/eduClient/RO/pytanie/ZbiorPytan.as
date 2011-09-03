@@ -21,7 +21,7 @@ package net.twerno.eduClient.RO.pytanie {
 		public var autorId:String;
 		
 //		@NotNull
-		public var isPublic:Boolean = true;
+		public var isPublic:Boolean = false;
 		
 //		@NotNull
 		public var usuniety:Boolean;

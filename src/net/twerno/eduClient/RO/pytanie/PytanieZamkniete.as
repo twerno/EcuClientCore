@@ -19,7 +19,7 @@ package net.twerno.eduClient.RO.pytanie {
 		public var trescPytania:String;
 		
 //		@NotNull
-		public var typZdania:String;
+		public var typZadania:String;
 		
 //		@NotNull
 		public var kategoria:String;
@@ -34,6 +34,13 @@ package net.twerno.eduClient.RO.pytanie {
 
 		public function Kopia():PytanieZamkniete {
 			return ObjectUtil.copy(this) as PytanieZamkniete;
+		}
+		
+		public function dajOdpowiedz(odpId:String):OdpPytanieZamkniete {
+			for each (var odp:OdpPytanieZamkniete in odpowiedzi)
+				if (odp.id == odpId)
+					return odp;
+			return null;	
 		}
 	}
 }

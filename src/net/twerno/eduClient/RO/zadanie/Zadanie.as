@@ -36,7 +36,7 @@ package net.twerno.eduClient.RO.zadanie {
 		public var dtDo:Date;
 
 //		@NotNull
-		public var limitCzasowy:int;
+		public var limitCzasowy:int = 999;
 
 //		@NotNull 
 		public var limitPytan:int;

@@ -28,12 +28,12 @@ package net.twerno.eduClient.consts {
 
 
 		// ENUM: net.twerno.eduserver.zadanie.TypWyboruPytan
-		public static const TYP_WYBORU_PYTAN_PO_KOLEI      : String = 'PO_KOLEI';
+//		public static const TYP_WYBORU_PYTAN_PO_KOLEI      : String = 'PO_KOLEI';
 		public static const TYP_WYBORU_PYTAN_LOSOWO        : String = 'LOSOWO';
 		public static const TYP_WYBORU_PYTAN_INTELIGENTNIE : String = 'INTELIGENTNIE';
 		public static const TYP_WYBORU_KONWERTER : KonwerterDataProvider = 
 			new KonwerterDataProvider(
-				{label: 'po kolei',      val:TYP_WYBORU_PYTAN_PO_KOLEI},
+//				{label: 'po kolei',      val:TYP_WYBORU_PYTAN_PO_KOLEI},
 				{label: 'losowo',        val:TYP_WYBORU_PYTAN_LOSOWO},
 				{label: 'inteligentnie', val:TYP_WYBORU_PYTAN_INTELIGENTNIE});
 		
