@@ -50,6 +50,10 @@ package net.twerno.eduClient.RO.zadanie {
 		//		@OneToMany(mappedBy="zadanie", cascade=CascadeType.ALL)
 		public var zadanie_zbioryPytan:ArrayCollection = new ArrayCollection();
 		
+		//		@NotNull
+		//		@OneToOne(mappedBy="zadanie", cascade=CascadeType.ALL)
+		public var zasady:ZadaneZadanie_Zasady;
+		
 //		@NotNull
 //		@ElementCollection
 		public var grupy:ArrayCollection = new ArrayCollection();

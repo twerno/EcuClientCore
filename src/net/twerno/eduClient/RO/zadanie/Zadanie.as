@@ -49,6 +49,10 @@ package net.twerno.eduClient.RO.zadanie {
 //		@OneToMany(mappedBy="zadanie", cascade=CascadeType.ALL)
 		public var zadanie_zbioryPytan:ArrayCollection = new ArrayCollection();
 		
+//		@NotNull
+//		@OneToOne(mappedBy="zadanie", cascade=CascadeType.ALL)
+		public var zasady:Zadanie_Zasady;
+		
 		
 		public function has_zbiorPytan(zbiorPytanId:String):Boolean {
 			return get_zbiorPytan(zbiorPytanId) != null;

@@ -40,6 +40,8 @@
     <classEntry path="net.twerno.eduClient.RO.sesja.KartaOdpowiedzi"/>
     <classEntry path="net.twerno.eduClient.RO.sesja.SesjaOtwartaRO"/>
     <classEntry path="net.twerno.eduClient.rpc.services.SesjaService"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.Zadanie_Zasady"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Zasady"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
