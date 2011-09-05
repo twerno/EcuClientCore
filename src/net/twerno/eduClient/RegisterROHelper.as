@@ -1,7 +1,9 @@
 package net.twerno.eduClient {
 	import net.twerno.eduClient.RO.sesja.KartaOdpowiedzi;
+	import net.twerno.eduClient.RO.sesja.OpanowaniePytaniaRO;
 	import net.twerno.eduClient.RO.sesja.Sesja;
 	import net.twerno.eduClient.RO.sesja.SesjaOtwartaRO;
+	import net.twerno.eduClient.RO.sesja.Sesja_Zasady;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Zasady;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_ZbiorPytan;
@@ -20,6 +22,9 @@ package net.twerno.eduClient {
 			var s1:Sesja;
 			var s2:KartaOdpowiedzi;
 			var s3:SesjaOtwartaRO;
+			var s4:Sesja_Zasady;
+			var s5:OpanowaniePytaniaRO;
+			var s6:SesjaOtwartaRO;
 		}
 	}
 }

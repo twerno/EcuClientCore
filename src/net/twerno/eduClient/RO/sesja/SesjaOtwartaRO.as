@@ -13,6 +13,7 @@ package net.twerno.eduClient.RO.sesja {
 
 		public var pytania:ArrayCollection = new ArrayCollection();
 		
+		public var opanowanePytania:ArrayCollection = new ArrayCollection();
 		
 		public function SesjaOtwartaRO() {
 		}

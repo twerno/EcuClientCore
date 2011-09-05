@@ -5,7 +5,7 @@ package net.twerno.eduClient.RO {
 	public class ROOEntity {
 		public var id: String = "";
 
-		public var version: int = -1;
+		public var version: int = 0;
 
 		public function detailedToString():String {
 			return ObjectHelper.detailedToString(this, 

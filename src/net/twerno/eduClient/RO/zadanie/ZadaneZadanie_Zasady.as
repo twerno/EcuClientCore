@@ -4,18 +4,12 @@ package net.twerno.eduClient.RO.zadanie {
 	[Bindable]
 	[RemoteClass(alias="net.twerno.eduserver.zadanie.entity.ZadaneZadanie_Zasady")]
 	public class ZadaneZadanie_Zasady extends ROOEntity {
-
-//		@NotNull
-//		@ManyToOne
-		public var zadanie:ZadaneZadanie;
 		
 		public var czas_bronze:int;
 		
 		public var czas_silver:int;
 		
 		public var czas_gold:int;
-		
-		public var bezblednie:Boolean;
 		
 		public var punkty_bronze:int;
 		

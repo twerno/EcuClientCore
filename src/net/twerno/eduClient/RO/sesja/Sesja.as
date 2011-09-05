@@ -28,5 +28,8 @@ package net.twerno.eduClient.RO.sesja {
 		
 //		@OneToMany(mappedBy="sesjaId")
 		public var odpowiedzi:ArrayCollection = new ArrayCollection();
+		
+//		@OneToOne
+		public var zasady:Sesja_Zasady;
 	}
 }

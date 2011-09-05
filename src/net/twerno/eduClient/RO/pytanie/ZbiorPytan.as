@@ -26,10 +26,13 @@ package net.twerno.eduClient.RO.pytanie {
 //		@NotNull
 		public var usuniety:Boolean;
 		
+//		@NotNull
+		public var size:int = 0;
+
 		public function Kopia():ZbiorPytan {
 			return ObjectUtil.copy(this) as ZbiorPytan;
 		}
-		
+
 		public function wczytajZ(zbior:ZbiorPytan):void {
 			this.id         = zbior.id;
 			this.version    = zbior.version;
@@ -39,7 +42,7 @@ package net.twerno.eduClient.RO.pytanie {
 			this.isPublic   = zbior.isPublic;
 			this.usuniety   = zbior.usuniety;
 		}
-		
+
 		public function toString():String {
 			return opis;
 		}
