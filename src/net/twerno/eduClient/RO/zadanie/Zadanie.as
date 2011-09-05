@@ -17,7 +17,7 @@ package net.twerno.eduClient.RO.zadanie {
 
 //		@NotNull
 //		TypZadania
-		public var typZadania:String = Const.TYP_ZADANIA_POSORTUJ;
+		public var typZadania:String = Const.TYP_ZADANIA_QUIZ;
 
 //		@NotNull
 		public var typWyboruPytan:String = Const.TYP_WYBORU_PYTAN_LOSOWO;
@@ -39,7 +39,7 @@ package net.twerno.eduClient.RO.zadanie {
 		public var limitCzasowy:int = 999;
 
 //		@NotNull 
-		public var limitPytan:int;
+		public var iloscPytan:int;
 
 //		@NotNull
 //		TrybSprawdzenia

@@ -6,10 +6,7 @@ package net.twerno.eduClient.RO.zadanie {
 	public class ZadaneZadanie_ZbiorPytan extends ROOEntity {
 		
 		//		@NotNull
-		public var coNajmniej:int = 0;
-		
-		//		@NotNull
-		public var nieWiecejNiz:int = 0;
+		public var iloscPytan:int = 0;
 		
 		//		@NotNull
 		//		@ManyToOne

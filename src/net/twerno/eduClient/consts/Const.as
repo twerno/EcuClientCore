@@ -22,8 +22,8 @@ package net.twerno.eduClient.consts {
 
 		public static const TYP_ZADANIA_KONWERTER : KonwerterDataProvider = 
 			new KonwerterDataProvider(
-				{label: 'quiz',     val:TYP_ZADANIA_QUIZ},
-				{label: 'posortuj', val:TYP_ZADANIA_POSORTUJ});
+				{label: 'quiz',     val:TYP_ZADANIA_QUIZ});
+//				{label: 'posortuj', val:TYP_ZADANIA_POSORTUJ});
 
 
 
@@ -34,8 +34,8 @@ package net.twerno.eduClient.consts {
 		public static const TYP_WYBORU_KONWERTER : KonwerterDataProvider = 
 			new KonwerterDataProvider(
 //				{label: 'po kolei',      val:TYP_WYBORU_PYTAN_PO_KOLEI},
-				{label: 'losowo',        val:TYP_WYBORU_PYTAN_LOSOWO},
-				{label: 'inteligentnie', val:TYP_WYBORU_PYTAN_INTELIGENTNIE});
+				{label: 'wg grup',   val:TYP_WYBORU_PYTAN_LOSOWO},
+				{label: 'wg wiedzy', val:TYP_WYBORU_PYTAN_INTELIGENTNIE});
 		
 		// ENUM: net.twerno.eduserver.sesja.SesjaStan
 		public static const SESJA_STAN_ROZPOCZETA : String = 'SESJA_ROZPOCZETA';

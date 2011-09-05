@@ -9,7 +9,7 @@ package net.twerno.eduClient.RO.pytanie {
 	[RemoteClass(alias="net.twerno.eduserver.pytanie.entity.ZbiorPytan")]
 	public class ZbiorPytan extends ROOEntity {
 //		@NotNull
-		public var typZadania:String = Const.TYP_ZADANIA_POSORTUJ;
+		public var typZadania:String = Const.TYP_ZADANIA_QUIZ;
 		
 //		@NotNull
 		public var opis:String;

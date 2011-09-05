@@ -40,7 +40,7 @@ package net.twerno.eduClient.RO.zadanie {
 		public var limitCzasowy:int;
 		
 		//		@NotNull 
-		public var limitPytan:int;
+		public var iloscPytan:int;
 		
 		//		@NotNull
 		//		TrybSprawdzenia
