@@ -29,6 +29,7 @@ package net.twerno.eduClient.rpc.services {
 		}
 
 		public function login(username:String, password:String):RpcToken {
+			_eduClient.otwartePolaczenie = true;
 			var token:AsyncToken = ro.channelSet.login(username, password); 
 			return new RpcToken(token, destination, 'login');
 		}
