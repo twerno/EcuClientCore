@@ -5,6 +5,9 @@ package net.twerno.eduClient {
 	import net.twerno.eduClient.RO.sesja.SesjaOtwartaRO;
 	import net.twerno.eduClient.RO.sesja.Sesja_Zasady;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie;
+	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Stats;
+	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_WithStats;
+	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Wynik;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Zasady;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_ZbiorPytan;
 	import net.twerno.eduClient.RO.zadanie.Zadanie;
@@ -19,6 +22,9 @@ package net.twerno.eduClient {
 			var z4:Zadanie_ZbiorPytan;
 			var z5:Zadanie_Zasady;
 			var z6:ZadaneZadanie_Zasady;
+			var z7:ZadaneZadanie_Stats;
+			var z8:ZadaneZadanie_WithStats;
+			var z9:ZadaneZadanie_Wynik;
 			var s1:Sesja;
 			var s2:KartaOdpowiedzi;
 			var s3:SesjaOtwartaRO;

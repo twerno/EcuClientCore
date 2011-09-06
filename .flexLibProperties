@@ -44,6 +44,9 @@
     <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Zasady"/>
     <classEntry path="net.twerno.eduClient.RO.sesja.Sesja_Zasady"/>
     <classEntry path="net.twerno.eduClient.RO.sesja.OpanowaniePytaniaRO"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Stats"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_WithStats"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Wynik"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

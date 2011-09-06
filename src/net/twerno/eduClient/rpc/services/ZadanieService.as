@@ -19,6 +19,7 @@ package net.twerno.eduClient.rpc.services {
 //		private static const ZAPISZ_ZADANE_ZADANIA_METHOD  : String = 'zapiszZadaneZadanie';
 		private static const DAJ_ZADANE_PRZEZE_MNIE_METHOD : String = 'dajZadanePrzezeMnie';
 		private static const DAJ_ZADANE_MI_METHOD          : String = 'dajZadaneMi';
+		private static const DAJ_TABLICE_WYNIKOW_METHOD    : String = 'dajTabliceWynikow';
 		
 		public function ZadanieService(eduClient:EduClient, destination:String, roFactory:RemoteObjectFactory) {
 			super(eduClient, destination, roFactory);
@@ -46,8 +47,12 @@ package net.twerno.eduClient.rpc.services {
 			return rpcSend(DAJ_ZADANE_PRZEZE_MNIE_METHOD);
 		}
 
-		public function dajZadaneMi():RpcToken {
-			return rpcSend(DAJ_ZADANE_MI_METHOD);
+		public function dajZadaneMi(ukonczone:Boolean):RpcToken {
+			return rpcSend(DAJ_ZADANE_MI_METHOD, ukonczone);
+		}
+		
+		public function dajTabliceWynikow(zadaneZadanieId:String):RpcToken {
+			return rpcSend(DAJ_TABLICE_WYNIKOW_METHOD, zadaneZadanieId);
 		}
 	}
 }
