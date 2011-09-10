@@ -42,11 +42,13 @@
     <classEntry path="net.twerno.eduClient.rpc.services.SesjaService"/>
     <classEntry path="net.twerno.eduClient.RO.zadanie.Zadanie_Zasady"/>
     <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Zasady"/>
-    <classEntry path="net.twerno.eduClient.RO.sesja.Sesja_Zasady"/>
+    <classEntry path="net.twerno.eduClient.RO.sesja.Sesja_Wynik"/>
     <classEntry path="net.twerno.eduClient.RO.sesja.OpanowaniePytaniaRO"/>
     <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Stats"/>
     <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_WithStats"/>
     <classEntry path="net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Wynik"/>
+    <classEntry path="net.twerno.eduClient.RO.zadanie.ZadanieZadanie_Wynik_WithSkrot"/>
+    <classEntry path="net.twerno.eduClient.RO.sesja.Sesja_SkrotWynikow"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

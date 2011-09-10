@@ -4,8 +4,8 @@ package net.twerno.eduClient.RO.sesja {
 	import net.twerno.eduClient.RO.ROOEntity;
 	
 	[Bindable]
-	[RemoteClass(alias="net.twerno.eduserver.sesja.entity.Sesja_Zasady")]
-	public class Sesja_Zasady extends ROOEntity {
+	[RemoteClass(alias="net.twerno.eduserver.sesja.entity.Sesja_Wynik")]
+	public class Sesja_Wynik extends ROOEntity {
 		
 		public var sesja:Sesja;
 		

@@ -20,6 +20,8 @@ package net.twerno.eduClient.rpc.services {
 		private static const DAJ_ZADANE_PRZEZE_MNIE_METHOD : String = 'dajZadanePrzezeMnie';
 		private static const DAJ_ZADANE_MI_METHOD          : String = 'dajZadaneMi';
 		private static const DAJ_TABLICE_WYNIKOW_METHOD    : String = 'dajTabliceWynikow';
+		private static const USUN_ZADANIE_METHOD           : String = 'usunZadanie';
+		private static const DAJ_SKROCONE_WYNIKI_METHOD    : String = 'dajSkroconeWyniki';
 		
 		public function ZadanieService(eduClient:EduClient, destination:String, roFactory:RemoteObjectFactory) {
 			super(eduClient, destination, roFactory);
@@ -42,7 +44,7 @@ package net.twerno.eduClient.rpc.services {
 //			var token:AsyncToken = send(ZAPISZ_ZADANE_ZADANIA_METHOD, zadanie);
 //			return new ZadaneZadanieToken(token, zadanie);
 //		}
-//		
+
 		public function dajZadanePrzezeMnie():RpcToken {
 			return rpcSend(DAJ_ZADANE_PRZEZE_MNIE_METHOD);
 		}
@@ -53,6 +55,15 @@ package net.twerno.eduClient.rpc.services {
 		
 		public function dajTabliceWynikow(zadaneZadanieId:String):RpcToken {
 			return rpcSend(DAJ_TABLICE_WYNIKOW_METHOD, zadaneZadanieId);
+		}
+		
+		public function usunZadanie(zadanie:Zadanie):ZadanieToken {
+			var token:AsyncToken = send(USUN_ZADANIE_METHOD, zadanie.id);
+			return new ZadanieToken(token, destination, USUN_ZADANIE_METHOD, zadanie);
+		}
+		
+		public function dajSkroconeWyniki(zadaneZadanieId:String):RpcToken {
+			return rpcSend(DAJ_SKROCONE_WYNIKI_METHOD, zadaneZadanieId);
 		}
 	}
 }

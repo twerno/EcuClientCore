@@ -3,7 +3,8 @@ package net.twerno.eduClient {
 	import net.twerno.eduClient.RO.sesja.OpanowaniePytaniaRO;
 	import net.twerno.eduClient.RO.sesja.Sesja;
 	import net.twerno.eduClient.RO.sesja.SesjaOtwartaRO;
-	import net.twerno.eduClient.RO.sesja.Sesja_Zasady;
+	import net.twerno.eduClient.RO.sesja.Sesja_SkrotWynikow;
+	import net.twerno.eduClient.RO.sesja.Sesja_Wynik;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Stats;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_WithStats;
@@ -11,6 +12,7 @@ package net.twerno.eduClient {
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_Zasady;
 	import net.twerno.eduClient.RO.zadanie.ZadaneZadanie_ZbiorPytan;
 	import net.twerno.eduClient.RO.zadanie.Zadanie;
+	import net.twerno.eduClient.RO.zadanie.ZadanieZadanie_Wynik_WithSkrot;
 	import net.twerno.eduClient.RO.zadanie.Zadanie_Zasady;
 	import net.twerno.eduClient.RO.zadanie.Zadanie_ZbiorPytan;
 
@@ -25,12 +27,14 @@ package net.twerno.eduClient {
 			var z7:ZadaneZadanie_Stats;
 			var z8:ZadaneZadanie_WithStats;
 			var z9:ZadaneZadanie_Wynik;
+			var z10:ZadanieZadanie_Wynik_WithSkrot;
 			var s1:Sesja;
 			var s2:KartaOdpowiedzi;
 			var s3:SesjaOtwartaRO;
-			var s4:Sesja_Zasady;
+			var s4:Sesja_Wynik;
 			var s5:OpanowaniePytaniaRO;
 			var s6:SesjaOtwartaRO;
+			var s7:Sesja_SkrotWynikow;
 		}
 	}
 }

@@ -24,12 +24,12 @@ package net.twerno.eduClient.RO.sesja {
 		public var stanSesji:String;
 		
 //		@NotNull
-		public var wynik:Number;
+//		public var wynik:Number;
 		
 //		@OneToMany(mappedBy="sesjaId")
 		public var odpowiedzi:ArrayCollection = new ArrayCollection();
 		
 //		@OneToOne
-		public var zasady:Sesja_Zasady;
+		public var wynik:Sesja_Wynik;
 	}
 }
