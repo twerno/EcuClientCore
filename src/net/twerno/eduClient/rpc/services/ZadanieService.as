@@ -9,6 +9,7 @@ package net.twerno.eduClient.rpc.services {
 	import net.twerno.eduClient.rpc.tokens.RpcToken;
 	import net.twerno.eduClient.rpc.tokens.ZadaneZadanieToken;
 	import net.twerno.eduClient.rpc.tokens.ZadanieToken;
+//	import net.twerno.eduClient.validators.ZadanieValidator;
 	
 	public class ZadanieService extends AbstractService {
 		public static const SERVICE_NAME : String = 'zadanieService';
@@ -28,6 +29,8 @@ package net.twerno.eduClient.rpc.services {
 		}
 		
 		public function zapiszZadanie(zadanie:Zadanie):ZadanieToken {
+//			var validator:ZadanieValidator = new ZadanieValidator();
+//			validator.SprawdzAndThrow(zadanie);
 			var token:AsyncToken = send(ZAPISZ_ZADANIE_METHOD, zadanie);
 			return new ZadanieToken(token, destination, ZAPISZ_ZADANIE_METHOD, zadanie);
 		}
